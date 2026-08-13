@@ -1,0 +1,11 @@
+images*/
+*.mlpackage
+*.mlmodelc
+model.pt
+*.zip
+venv*/
+cml*/
+__pycache__/
+*.log
+manifest_*_pinned.csv
+manifest_inat_full.csv
