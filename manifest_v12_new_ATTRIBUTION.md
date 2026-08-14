@@ -1,0 +1,47 @@
+# Species imagery contributors
+
+Every photographer whose imagery informed the DeepSix fish-ID centroid store — attribution is universal here by policy, including where the licence (CC0/PD) requires none.
+
+- Andrew Deacon, no rights reserved (CC0) — 1 photo(s), CC0
+- TheMongrelKoi, no rights reserved (CC0) — 2 photo(s), CC0
+- Yann Kemper, no rights reserved (CC0) — 2 photo(s), CC0
+- © Ben Costamagna, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Bill Levine, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Borja Fierro, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Charlotte Kirchner, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Christine Rampon, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Dan Schofield, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Dan Wrench, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Daniel Eisenhauer, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Donald Davesne, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Evan M. Raskin, some rights reserved (CC-BY) — 7 photo(s), CC-BY 4.0
+- © Farren Dell Rossman, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Golfopolikayak, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Iván Cumpián, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Jan Ebr &amp; Ivana Ebrová, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Jared Shorma, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Kai Squires, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Katerina Kalogerini, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Kyle Van Houtan, some rights reserved (CC-BY) — 8 photo(s), CC-BY 4.0
+- © Luke Lythgoe, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Matt B, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © maxark, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Michael Bommerer, some rights reserved (CC-BY) — 9 photo(s), CC-BY 4.0
+- © PampaSorro, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Patrick Connolly, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Pauline Walsh Jacobson, some rights reserved (CC-BY) — 35 photo(s), CC-BY 4.0
+- © portioid, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Radu Teodoreanu, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © richyfourtytwo, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Robert Taylor, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Robin White, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Ryan Watson, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Sabarni Sarker, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Samuel GUIRAUDOU, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Samuele Papeschi, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Sarah Faulwetter, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Susan Aide, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Teja Yantrapalli, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Thomas Dreux, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Yves Bas, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © 呂一起(Lyu yi-chi), some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
