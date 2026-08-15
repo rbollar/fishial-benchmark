@@ -1,0 +1,175 @@
+# Species imagery contributors
+
+Every photographer whose imagery informed the DeepSix fish-ID centroid store — attribution is universal here by policy, including where the licence (CC0/PD) requires none.
+
+- Andra Waagmeester, no rights reserved (CC0) — 5 photo(s), CC0
+- Andrew Deacon, no rights reserved (CC0) — 23 photo(s), CC0
+- Augusto Olmos Mercado, no rights reserved (CC0) — 1 photo(s), CC0
+- bitsandbugs, no rights reserved (CC0) — 1 photo(s), CC0
+- demianlescano, no rights reserved (CC0) — 2 photo(s), CC0
+- Dmitry Semigradsky, no rights reserved (CC0) — 5 photo(s), CC0
+- Erica Krimmel, no rights reserved (CC0) — 1 photo(s), CC0
+- Federico Muñoz, no rights reserved (CC0) — 1 photo(s), CC0
+- Francesco Cecere, no rights reserved (CC0) — 2 photo(s), CC0
+- Henggang Cui, no rights reserved (CC0) — 1 photo(s), CC0
+- Ina Siebert, no rights reserved (CC0) — 11 photo(s), CC0
+- Jean-Paul Boerekamps, no rights reserved (CC0) — 34 photo(s), CC0
+- Justin Philbois, no rights reserved (CC0) — 8 photo(s), CC0
+- Konrad J. Hammerl, no rights reserved (CC0) — 1 photo(s), CC0
+- Mike Concannon, no rights reserved (CC0) — 1 photo(s), CC0
+- Mirela, no rights reserved (CC0) — 9 photo(s), CC0
+- Mirko Schoenitz, no rights reserved (CC0) — 3 photo(s), CC0
+- Nick Blewden, no rights reserved (CC0) — 5 photo(s), CC0
+- Peter Baryshkin, no rights reserved (CC0) — 3 photo(s), CC0
+- Peter Gabler, no rights reserved (CC0) — 3 photo(s), CC0
+- Raffaele Maiorano, no rights reserved (CC0) — 2 photo(s), CC0
+- rochard, no rights reserved (CC0) — 2 photo(s), CC0
+- Ruth Gutiérrez Oliveros, no rights reserved (CC0) — 1 photo(s), CC0
+- Scott Loarie, no rights reserved (CC0) — 1 photo(s), CC0
+- scott_young, no rights reserved (CC0) — 1 photo(s), CC0
+- Sinaloa Silvestre, no rights reserved (CC0) — 2 photo(s), CC0
+- Stari Plativky, no rights reserved (CC0) — 2 photo(s), CC0
+- steve b, no rights reserved (CC0) — 1 photo(s), CC0
+- Stuart, no rights reserved (CC0) — 1 photo(s), CC0
+- Theo Summer, no rights reserved (CC0) — 11 photo(s), CC0
+- Yamil J.R, no rights reserved (CC0) — 1 photo(s), CC0
+- Yan Wong, no rights reserved (CC0) — 1 photo(s), CC0
+- Zoltán Stekkelpak, no rights reserved (CC0) — 1 photo(s), CC0
+- Zygy, no rights reserved (CC0) — 1 photo(s), CC0
+- © A H, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Adrien &amp; Lise, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © ajott, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Alberto Alcalá, some rights reserved (CC-BY) — 71 photo(s), CC-BY 4.0
+- © Alex Stuart, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © als93, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Andrew McKinlay, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Andrii Khokhlov, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © audili, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Austen Novis, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Ben Costamagna, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Ben Jobson, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Bill Levine, some rights reserved (CC-BY) — 40 photo(s), CC-BY 4.0
+- © BJ Smit, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © CaracalShan, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Carlos Domínguez-Rodríguez, some rights reserved (CC-BY) — 47 photo(s), CC-BY 4.0
+- © Carlos Martínez, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Caroline Quinn, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Charlotte Kirchner, some rights reserved (CC-BY) — 16 photo(s), CC-BY 4.0
+- © Chris Chucholl, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Chris Kirby-Lambert, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Chris Taklis, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Christian Berg, some rights reserved (CC-BY) — 9 photo(s), CC-BY 4.0
+- © Clive Freedman, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Cricket Raspet, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Dan Riley, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Daniel Benák, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Daniel Z, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Debra Baker, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © desertnaturalist, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Don Loarie, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Donald Davesne, some rights reserved (CC-BY) — 34 photo(s), CC-BY 4.0
+- © Edmundas Greimas, some rights reserved (CC-BY) — 12 photo(s), CC-BY 4.0
+- © Ella McCausland, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © fede2cr, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Gergely Nigg, some rights reserved (CC-BY) — 14 photo(s), CC-BY 4.0
+- © Gianluca Marraffa, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Golfopolikayak, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Grete Pasch, some rights reserved (CC-BY) — 7 photo(s), CC-BY 4.0
+- © Henrik Kibak, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Jacek Pietruszewski, some rights reserved (CC-BY) — 15 photo(s), CC-BY 4.0
+- © James Telford, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © James-LaFontaine, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Jan Ebr &amp; Ivana Ebrová, some rights reserved (CC-BY) — 30 photo(s), CC-BY 4.0
+- © Jens, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © jeyre, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Jim Wallace, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © John Brew, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © John G. Phillips, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © John Hepburn, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Jonathan Maitrot, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Jono, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Josh Noseworthy, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © José Javier Barrios Flores, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Juan Rodríguez, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Julien Renoult, some rights reserved (CC-BY) — 16 photo(s), CC-BY 4.0
+- © Julien Tchilinguirian, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Juraj Ahel, some rights reserved (CC-BY) — 9 photo(s), CC-BY 4.0
+- © Kai Murphy, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Kai Squires, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © keesgroenendijk, some rights reserved (CC-BY) — 31 photo(s), CC-BY 4.0
+- © Ken-ichi Ueda, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Kristof Zyskowski, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Leon Sulmann, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Leonel Roget, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Lisa Bennett, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Lisa Biasillo, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Loren Cassin Sackett, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Louis Imbeau, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Lukas Zangl, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Mahomed Desai, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Mario Bassini, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © mark-groeneveld, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Martin Gutewort, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Martin Scheidleder, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Matt Berger, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Melissa Meadows, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Michael Bakker Paiva, some rights reserved (CC-BY) — 16 photo(s), CC-BY 4.0
+- © Michael Bommerer, some rights reserved (CC-BY) — 38 photo(s), CC-BY 4.0
+- © Michal Honskus, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © mikazilla, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Millie Basden, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Mário de Pinto Balsemão, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © nbasargin, some rights reserved (CC-BY) — 16 photo(s), CC-BY 4.0
+- © Nicola Crockford, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Nicola Faulks, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © nikonbird007, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Nils, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Oscar Hopgood, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Patrick Cox, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Paul Asman, some rights reserved (CC-BY) — 9 photo(s), CC-BY 4.0
+- © Paul Kirkland and Kay Taylor, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © paulchallinor, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Pauline Walsh Jacobson, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © pavlaki1968, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Petr Harant, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Philipp Pavelka, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Phill Robinson, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Pierre Pericard, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © R Vasconcellos, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Rachel Crane, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © rcoliveira84, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © relew, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Ricardo Betancourt Sánchez, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © River Ahlquist, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Rob Foster, some rights reserved (CC-BY) — 8 photo(s), CC-BY 4.0
+- © Robin White, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Robyn Perkins, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Rory Wilson, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Rui Ribeiro, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Ryan McMinds, some rights reserved (CC-BY) — 8 photo(s), CC-BY 4.0
+- © Sameer Shaik, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Sarah Faulwetter, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © Selim Türeli, some rights reserved (CC-BY) — 16 photo(s), CC-BY 4.0
+- © Shawn O'Donnell, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Silvan Alder, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © sinaves, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Sinead Gómez, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Slunky, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Sofía García, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Susan Murphy, some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- © Susan Prior, some rights reserved (CC-BY) — 12 photo(s), CC-BY 4.0
+- © Sylvain Montagner, some rights reserved (CC-BY) — 14 photo(s), CC-BY 4.0
+- © Trevor Van Loon, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © tunicatedreamz, some rights reserved (CC-BY) — 7 photo(s), CC-BY 4.0
+- © Uma Mezzanotte, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Valentin Moser, some rights reserved (CC-BY) — 9 photo(s), CC-BY 4.0
+- © Vsevolod Rudyi, some rights reserved (CC-BY) — 5 photo(s), CC-BY 4.0
+- © Yves Bas, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Zac Peterson, some rights reserved (CC-BY) — 8 photo(s), CC-BY 4.0
+- © Zihao Wang, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Óscar Sampedro, some rights reserved (CC-BY) — 3 photo(s), CC-BY 4.0
+- © Анна Митрошенкова, some rights reserved (CC-BY) — 6 photo(s), CC-BY 4.0
+- © Татьяна Максимова, some rights reserved (CC-BY) — 2 photo(s), CC-BY 4.0
+- © Ульяна Лалак, some rights reserved (CC-BY) — 4 photo(s), CC-BY 4.0
+- © 呂一起(Lyu yi-chi), some rights reserved (CC-BY) — 1 photo(s), CC-BY 4.0
+- Светлана Царахова, no rights reserved (CC0) — 2 photo(s), CC0
