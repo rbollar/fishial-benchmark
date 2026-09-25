@@ -1,0 +1,46 @@
+# Species imagery contributors — store v8
+
+Store v8 (#2075, 2026-09-25) rebuilds four classes whose v7 centroids were partly built from another animal (iNat `taxon_name` loose match): *Caretta caretta*, *Limanda limanda*, *Pollachius pollachius*, *Sepia officinalis*. Photos are exact-taxon, research-grade, CC0/CC-BY, underwater-first. Also a corrected reference photo for *Urticina felina*. Attribution is universal here by policy, including where the licence (CC0) requires none.
+
+- Andra Waagmeester, no rights reserved (CC0) — 2 photo(s), CC0
+- christopherlp, no rights reserved (CC0) — 1 photo(s), CC0
+- Jérémy Capelle, no rights reserved (CC0) — 3 photo(s), CC0
+- Kian Hayles-Cotton, no rights reserved (CC0) — 4 photo(s), CC0
+- Marino Linić, no rights reserved (CC0) — 2 photo(s), CC0
+- Matthieu Trotignon, no rights reserved (CC0) — 1 photo(s), CC0
+- Morten Rosenvold Villadsen, no rights reserved (CC0) — 1 photo(s), CC0
+- © Abigail Luxford-Noyes, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © andygpos, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Annika Lindqvist, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Ben Jobson, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Bernard Picton, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © celticdeep, some rights reserved (CC-BY) — 22 photo(s), CC-BY
+- © Charlotte Kirchner, some rights reserved (CC-BY) — 4 photo(s), CC-BY
+- © Christine Loew, some rights reserved (CC-BY) — 3 photo(s), CC-BY
+- © Dan Schofield, some rights reserved (CC-BY) — 3 photo(s), CC-BY
+- © Donald Davesne, some rights reserved (CC-BY) — 12 photo(s), CC-BY
+- © Duncan Brooks, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Edoardo Razzetti, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Hugo Innes, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Jacek Pietruszewski, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Jon Jorgensen, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Julien Renoult, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Katerina Kalogerini, some rights reserved (CC-BY) — 3 photo(s), CC-BY
+- © Klaus Kevin Kristensen, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Libby Keatley, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Malte Krömer, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Michael Bommerer, some rights reserved (CC-BY) — 10 photo(s), CC-BY
+- © nbasargin, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Nicola Crockford, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Oliver Power, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Petr Harant, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Philipp, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Phill Robinson, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © rmjb, some rights reserved (CC-BY) — 6 photo(s), CC-BY
+- © Roland Gromes, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Samuele Papeschi, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Sarah Faulwetter, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © shahar chaikin, some rights reserved (CC-BY) — 4 photo(s), CC-BY
+- © Viktor V. Grøtan, some rights reserved (CC-BY) — 1 photo(s), CC-BY
+- © Vsevolod Rudyi, some rights reserved (CC-BY) — 2 photo(s), CC-BY
+- © Yves Bas, some rights reserved (CC-BY) — 1 photo(s), CC-BY
