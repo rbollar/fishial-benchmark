@@ -1,4 +1,4 @@
-import csv, pathlib, re
+import csv, pathlib, re, sys
 from collections import defaultdict
 import numpy as np, torch, timm
 from PIL import Image
@@ -16,7 +16,10 @@ by_sp = defaultdict(list)
 for path in sorted(pathlib.Path("images_inat").iterdir()):
     m = re.match(r"(.+)__(\d+)\.", path.name)
     if not m: continue
-    by_sp[man[int(m.group(2))]["species"]].append(path)
+    row = man[int(m.group(2))]
+    # the published 49/77 is the CC-BY rows; --with-cc0 builds from every row, as the shipped store does
+    if row["license"] == "CC0" and "--with-cc0" not in sys.argv: continue
+    by_sp[row["species"]].append(path)
 centroids, labels = [], []
 for sp, paths in sorted(by_sp.items()):
     if len(paths) < 3: continue

@@ -23,6 +23,7 @@ sources on this date.
 ## Edge cases
 
 - **Train/test contamination:** Fishial's training corpus (2.6M images) plausibly overlaps iNat/GBIF material. For evaluation, filter iNat observations to dates after the v0.10.2 checkpoint (repo HEAD 2026-04-09 as proxy), and treat Rick's own dive photos as the uncontaminated gold set.
+- **Publish every row, CC0 included:** a CC0 photo needs no credit, but the public manifest is the audit record for the store, so each cut's `manifest_*_public.csv` lists CC0 rows alongside CC-BY ones, credited "{name}, no rights reserved (CC0)" (2026-09-27).
 - **License string fidelity:** record the exact per-image license (e.g. "CC-BY 3.0 AU" for OzFish, not normalized "BY") — 3.0 attribution mechanics differ slightly from 4.0.
 - **docs.fishial.ai** has a "Fish images sites" page (`/otherprojects/fishimagedatasets`) and an external-datasets page (`/otherprojects/externalfishdatasets`) — both unreachable 2026-08-12; check when the docs site returns, both for additional sources and as a hint at what their training corpus drew from (contamination assessment).
 

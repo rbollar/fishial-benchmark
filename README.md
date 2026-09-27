@@ -6,16 +6,19 @@ in, a Core ML nearest-centroid classifier out — with the benchmark that
 measures it.
 
 - **Backbone:** Meta's DINOv2 ViT-B/14 (Apache-2.0), via timm.
-- **Store imagery:** iNaturalist Open Data, research-grade, CC-BY (manifest
-  committed here; per-image author, licence, observation link).
+- **Store imagery:** iNaturalist Open Data, research-grade, CC0 and CC-BY
+  (manifests committed here list every photo in the shipped store, with
+  per-image author, license, observation link).
 - **Eval imagery:** Wikimedia Commons, revision-pinned (manifests committed) —
   a different source from the store, so the benchmark is source-disjoint.
 
 ## Result
 
 **top-1 49% · top-5 77%** — 135 reef species, 1,010 eval images, whole-frame.
-(DeepSix ships a slightly larger store that adds CC0-licensed imagery: 51%/79%.
-The committed manifest reproduces the public number exactly.)
+The published number is built from the manifest's CC-BY rows, and
+`public_subset.py` reproduces it exactly. The manifest also carries the
+CC0 rows that DeepSix's store adds (51%/79% as measured for the shipped
+store); `public_subset.py --with-cc0` builds from every row.
 
 ## Reproduce
 
@@ -48,6 +51,9 @@ can be extended to new species with the same licence discipline
 
 Images are **not** in this repo and are never redistributed by it. Every
 manifest row records author, exact licence string, and source page.
+The `manifest_*_public.csv` files list every iNaturalist photo in each
+store cut, CC0 rows included, and CC0 photos are credited the way
+iNaturalist suggests: "Name, no rights reserved (CC0)".
 `manifest_inat_full_ATTRIBUTION.md` credits every contributing photographer —
 including CC0 contributors, whose licence requires nothing: attribution here
 is universal by policy.
@@ -55,6 +61,6 @@ is universal by policy.
 ## Licences
 
 - Code: MIT.
-- Imagery: per-image licences in the manifests (CC-BY for the committed store
-  manifest; the Commons eval manifests carry BY/BY-SA/CC0/PD per image).
+- Imagery: per-image licenses in the manifests (CC0 or CC-BY 4.0 per row in
+  the store manifests; the Commons eval manifests carry BY/BY-SA/CC0/PD per image).
 - DINOv2 weights: Meta AI, Apache-2.0, fetched at run time via timm.
