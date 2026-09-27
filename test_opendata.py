@@ -148,5 +148,46 @@ class Verify(unittest.TestCase):
         self.assertEqual([c.count(",") + 1 for c in calls], [200, 200, 1])
 
 
+
+class ObserverCapTests(unittest.TestCase):
+    """Supply-scaled photographer cap (Rick 2026-09-27: more supply, tighter cap)."""
+    def test_cap_tightens_with_supply(self):
+        from curate_opendata import observer_cap
+        self.assertEqual(observer_cap(80, 60), 15)    # thin: 25% of 60
+        self.assertEqual(observer_cap(200, 60), 12)   # 20%
+        self.assertEqual(observer_cap(2000, 60), 6)   # deep: 10%
+        self.assertEqual(observer_cap(5, 0), 2)       # never below 2
+
+    def _cand(self, per_user):
+        c = []
+        for u, n in per_user.items():
+            for k in range(n):
+                pid = f"{u}-{k}"
+                c.append(({"photo_id": pid, "observation_uuid": pid}, {"observer_id": u}))
+        return c
+
+    def test_relaxes_only_to_reach_30(self):
+        from curate_opendata import select_capped
+        # one dominant photographer (40) + 3 small ones (3 each): 49 photos
+        cand = self._cand({"a": 40, "b": 3, "c": 3, "d": 3})
+        kept, _, users, cap, relaxed = select_capped(cand, want=60)
+        self.assertTrue(relaxed)
+        self.assertEqual(len(kept), 30)
+        self.assertEqual(users["a"], 21)
+
+    def test_deep_supply_is_not_relaxed(self):
+        from curate_opendata import select_capped
+        cand = self._cand({f"u{i}": 20 for i in range(40)})   # 800 photos, 40 people
+        kept, _, users, cap, relaxed = select_capped(cand, want=60)
+        self.assertFalse(relaxed)
+        self.assertEqual(cap, 6)
+        self.assertEqual(len(kept), 60)
+        self.assertLessEqual(max(users.values()), 6)
+
+    def test_explicit_zero_means_no_cap(self):
+        from curate_opendata import select_capped
+        kept, _, users, cap, relaxed = select_capped(self._cand({"a": 50}), want=40, per_observer=0)
+        self.assertEqual(len(kept), 40); self.assertEqual(cap, 0)
+
 if __name__ == "__main__":
     unittest.main()

@@ -17,7 +17,7 @@ snapshot_date, observation_uuid and target_taxon_id. The snapshot is up to ~31
 days old: run verify_selection.py over the final selection before using it.
 
     python3 curate_opendata.py species.json manifest.csv [--want 60] [--per-obs 2]
-        [--per-observer 5] [--by-sa] [--coords coords.tsv] [--cache-dir DIR]
+        [--per-observer N|0] [--by-sa] [--coords coords.tsv] [--cache-dir DIR]
 
 species.json = {"<label>": <iNat taxon_id>, ...}. --source takes a directory of
 .csv.gz files instead of the bucket (tests, or an unpacked monthly tarball).
@@ -100,7 +100,56 @@ def descendants(targets, source, cache_dir):
     return out
 
 
-def curate(species, source=BASE, cache_dir=None, want=0, per_obs=0, per_observer=0, by_sa=False,
+def observer_cap(supply, want, floor=30):
+    """Photos one photographer may contribute to a species, scaled to supply.
+
+    A species' reference is the mean of its photos; one prolific photographer
+    turns it into the mean of their camera, strobe, site and often the same
+    individual. The more supply there is, the tighter the cap can be at no cost
+    (Rick, 2026-09-27: "The more images we have, the tighter we can be").
+    Share of the target: 25% under 2x supply, 20% up to 5x, 10% beyond; >= 2.
+    """
+    target = want or supply
+    if target <= 0:
+        return 0
+    ratio = supply / target
+    share = 0.25 if ratio < 2 else 0.20 if ratio < 5 else 0.10
+    return max(2, -(-int(share * target * 1000) // 1000))   # ceil without float drift
+
+
+def select(cand, per_obs=0, cap=0, want=0):
+    """Pick photos in candidate order under the per-observation and per-photographer caps."""
+    n_obs, n_user, kept, ids = {}, {}, [], set()
+    for p, o in cand:
+        u = o["observer_id"]
+        if p["photo_id"] in ids: continue  # one photo can sit on two observations
+        ids.add(p["photo_id"])
+        if per_obs and n_obs.get(p["observation_uuid"], 0) >= per_obs: continue
+        if cap and n_user.get(u, 0) >= cap: continue
+        n_obs[p["observation_uuid"]] = n_obs.get(p["observation_uuid"], 0) + 1
+        n_user[u] = n_user.get(u, 0) + 1
+        kept.append((p, o))
+        if want and len(kept) >= want: break
+    return kept, n_obs, n_user
+
+
+def select_capped(cand, per_obs=0, want=0, per_observer=None, floor=30):
+    """`per_observer`: None = supply-scaled cap (observer_cap), 0 = no cap, N = fixed.
+    A scaled cap that would push a species with enough supply below `floor` is
+    relaxed one photo at a time; the relaxation is returned so it gets logged."""
+    if per_observer is not None:
+        return select(cand, per_obs, per_observer, want) + (per_observer, False)
+    uncapped = select(cand, per_obs, 0, 0)[0]   # SUPPLY: every eligible photo, not capped at want
+    cap = observer_cap(len(uncapped), want, floor)
+    kept, n_obs, n_user = select(cand, per_obs, cap, want)
+    relaxed = False
+    while len(kept) < min(floor, want or floor, len(uncapped)) and cap < len(uncapped):
+        cap += 1; relaxed = True
+        kept, n_obs, n_user = select(cand, per_obs, cap, want)
+    return kept, n_obs, n_user, cap, relaxed
+
+
+def curate(species, source=BASE, cache_dir=None, want=0, per_obs=0, per_observer=None, by_sa=False,
            min_px=0, coords=None, max_acc=10000, min_anomaly=1.0, log=print):
     rows.date, label = None, {int(t): s for s, t in species.items()}
     tax = descendants(label, source, cache_dir)
@@ -140,17 +189,7 @@ def curate(species, source=BASE, cache_dir=None, want=0, per_obs=0, per_observer
         cand = [(p, o) for p, o in by.get(sp, [])
                 if max(int(p["width"] or 0), int(p["height"] or 0)) >= min_px]
         cand.sort(key=lambda po: (int(po[0]["position"] or 0), po[0]["photo_uuid"]))
-        n_obs, n_user, kept, ids = {}, {}, [], set()
-        for p, o in cand:
-            u = o["observer_id"]
-            if p["photo_id"] in ids: continue  # one photo can sit on two observations
-            ids.add(p["photo_id"])
-            if per_obs and n_obs.get(p["observation_uuid"], 0) >= per_obs: continue
-            if per_observer and n_user.get(u, 0) >= per_observer: continue
-            n_obs[p["observation_uuid"]] = n_obs.get(p["observation_uuid"], 0) + 1
-            n_user[u] = n_user.get(u, 0) + 1
-            kept.append((p, o))
-            if want and len(kept) >= want: break
+        kept, n_obs, n_user, cap, relaxed = select_capped(cand, per_obs, want, per_observer)
         for p, o in kept:
             code, lic, url = LIC[p["license"]]
             login, name = people.get(o["observer_id"], ("", ""))
@@ -164,7 +203,8 @@ def curate(species, source=BASE, cache_dir=None, want=0, per_obs=0, per_observer
                 "sha256": "", "license_code": code, "license_url": url, "taxon_id": o["taxon_id"],
                 "retrieved_utc": "", "snapshot_date": rows.date,
                 "observation_uuid": p["observation_uuid"], "target_taxon_id": tax[o["taxon_id"].encode()][0]})
-        log(f"{sp}: {len(kept)} photos, {len(n_obs)} obs, {len(n_user)} observers (of {len(cand)} candidates)")
+        capnote = "no photographer cap" if not cap else f"≤{cap}/photographer" + (" (RELAXED to reach 30)" if relaxed else "")
+        log(f"{sp}: {len(kept)} photos, {len(n_obs)} obs, {len(n_user)} observers (of {len(cand)} candidates; {capnote})")
     return out
 
 
@@ -173,7 +213,9 @@ if __name__ == "__main__":
     a.add_argument("species"); a.add_argument("out")
     a.add_argument("--source", default=BASE); a.add_argument("--cache-dir")
     a.add_argument("--want", type=int, default=0, help="photos per species, 0 = all")
-    a.add_argument("--per-obs", type=int, default=0); a.add_argument("--per-observer", type=int, default=0)
+    a.add_argument("--per-obs", type=int, default=0)
+    a.add_argument("--per-observer", type=int, default=None,
+                   help="photos per photographer: default = supply-scaled (25%%/20%%/10%% of --want), 0 = no cap")
     a.add_argument("--by-sa", action="store_true", help="admit CC-BY-SA (store v11+)")
     a.add_argument("--min-px", type=int, default=0, help="long-side floor of the original, px")
     a.add_argument("--coords", help="also write region coordinates (all research-grade obs)")

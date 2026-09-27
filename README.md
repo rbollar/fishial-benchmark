@@ -48,6 +48,9 @@ see "Discovery from iNaturalist Open Data" below; `curate_inat.py` /
 `curate_exact.py` are the older API-paging builders, kept so past manifests
 can be regenerated. `SOURCES.md` documents the source survey and filtering rules.
 
+
+**Photographer cap (default).** `curate_opendata.py` limits how many photos one photographer contributes to a species, scaled to supply: 25% of the target when supply is under 2x, 20% up to 5x, 10% beyond (never below 2). A species' reference is the mean of its photos, so one prolific photographer would otherwise make it the mean of their camera, site and subject. A cap that would push a species below 30 photos is relaxed one photo at a time and logged. `--per-observer N` sets a fixed cap; `--per-observer 0` turns it off.
+
 ## Discovery from iNaturalist Open Data (recommended)
 
 For more than a handful of species, don't page the iNaturalist API. iNaturalist
