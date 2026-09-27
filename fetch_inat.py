@@ -20,6 +20,7 @@ for i, r in enumerate(rows):
         print(f"FAIL {r['photo_id']}: {e}"); continue
     dest.write_bytes(data)
     r["sha256"] = hashlib.sha256(data).hexdigest()
+    if "retrieved_utc" in r: r["retrieved_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     ok += 1
     if i % 200 == 0: print(f"fetched {i}/{len(rows)}")
     time.sleep(0.25)

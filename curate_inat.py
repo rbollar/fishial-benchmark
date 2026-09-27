@@ -6,6 +6,10 @@ constructed for the Open Data S3 bucket. Records the EXACT per-photo licence
 string and SOURCES.md-format attribution. `observed_on` is kept so eval
 subsets can be date-filtered (post-2026-04 = post-Fishial-checkpoint).
 
+Older path, kept working: for bulk discovery use curate_opendata.py (the Open
+Data metadata tables, no API load) + verify_selection.py. This script's
+taxon_name= match is also loose; curate_exact.py fixes that.
+
 Usage: python3 curate_inat.py --species labels.json --per-species 30 --out manifest_inat.csv
 """
 import argparse

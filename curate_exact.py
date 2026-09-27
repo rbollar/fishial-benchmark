@@ -2,7 +2,9 @@
 """#2075: curate_inat.py with an EXACT taxon. `taxon_name=` is a loose match
 that pulled other animals into shipped classes; this resolves the species'
 taxon_id first and drops any observation whose taxon isn't the species or a
-subspecies of it. Same ordering (votes), licences and manifest columns."""
+subspecies of it. Same ordering (votes), licences and manifest columns.
+Older path, kept working: bulk discovery belongs on curate_opendata.py (Open
+Data metadata tables) + verify_selection.py, which don't page the API."""
 import csv, json, sys, time, urllib.parse, urllib.request
 UA = "DeepSix-Fishial-Benchmark/0.1 (research curation; support@deepsixdive.com)"
 OK = {"cc0", "cc-by"}

@@ -20,6 +20,19 @@ sources on this date.
 - **EOL** — aggregator with per-item licenses; mostly superseded by GBIF for this purpose.
 - **Flickr CC search** — license-filterable but species labels unreliable; not worth the curation cost.
 
+## Discovery: Open Data tables, not the API (2026-09-27)
+
+Bulk discovery reads the monthly Open Data metadata tables (`curate_opendata.py`):
+`taxa` (ancestry → every descendant of a taxon), `observations` (quality grade,
+coordinates, `positional_accuracy`, geomodel `anomaly_score`: below 1.0 means
+"not expected nearby"), `photos` (unversioned licence string, extension,
+dimensions, position), `observers` (login, name). They lack vote ordering,
+integer observation ids (uuid only), identification text and a live licence,
+so the final selection gets one batched API pass (`verify_selection.py`).
+GBIF's iNaturalist Research-grade Observations dataset (DOI 10.15468/ab3s5x)
+is the citable alternative, but it drops CC BY-SA observations and has no
+photo dimensions.
+
 ## Edge cases
 
 - **Train/test contamination:** Fishial's training corpus (2.6M images) plausibly overlaps iNat/GBIF material. For evaluation, filter iNat observations to dates after the v0.10.2 checkpoint (repo HEAD 2026-04-09 as proxy), and treat Rick's own dive photos as the uncontaminated gold set.

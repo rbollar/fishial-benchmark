@@ -43,9 +43,49 @@ python3 convert_dinov2.py
 python3 assemble_container.py
 ```
 
-`curate.py` / `curate_inat.py` are the manifest builders, included so the set
-can be extended to new species with the same licence discipline
-(`SOURCES.md` documents the source survey and filtering rules).
+`curate.py` builds the Commons eval manifests. For iNaturalist store imagery,
+see "Discovery from iNaturalist Open Data" below; `curate_inat.py` /
+`curate_exact.py` are the older API-paging builders, kept so past manifests
+can be regenerated. `SOURCES.md` documents the source survey and filtering rules.
+
+## Discovery from iNaturalist Open Data (recommended)
+
+For more than a handful of species, don't page the iNaturalist API. iNaturalist
+publishes the metadata monthly as four tab-separated tables in the public
+bucket (`https://inaturalist-open-data.s3.amazonaws.com/{taxa,observations,photos,observers}.csv.gz`,
+~33 GB compressed; dated tarballs under `metadata/`). The same data is on GBIF as
+DOI [10.15468/ab3s5x](https://doi.org/10.15468/ab3s5x), which carries versioned
+licence URLs but omits CC BY-SA observations and photo dimensions.
+
+```
+# 1. Discovery: stream the tables, keep research-grade CC0 / CC-BY photos of
+#    each taxon and its descendants (hybrids dropped). --cache-dir keeps the
+#    tables for the next run; without it nothing but the matches is written.
+python3 curate_opendata.py species.json pool.csv --cache-dir opendata --coords coords.tsv
+#    species.json = {"Holacanthus ciliaris": 47235, ...} (exact iNat taxon ids)
+#    --want N --per-obs 2 --per-observer K cap the pool; --by-sa admits CC BY-SA.
+
+# 2. Choose your final set from pool.csv (your own curation).
+
+# 3. Re-check ONLY the final set against the live API (<=200 observations per
+#    call, ~1 req/s): current licence, still research grade, still the taxon,
+#    no hybrid identification or mention. Adds the integer observation id and
+#    license_checked_utc.
+python3 verify_selection.py final.csv final_verified.csv --drops drops.json
+
+# 4. Fetch as before
+python3 fetch_inat.py final_verified.csv images_new
+```
+
+The manifest columns are the same as the published `manifest_*_public.csv`
+files, plus `snapshot_date`, `observation_uuid` and `target_taxon_id`.
+The licence discipline is unchanged: CC0 and CC BY only (CC BY-SA only if your
+use admits share-alike), never NC or ND, and every row keeps author, login,
+licence and source page. The snapshot can be a month old and a photographer
+can relicense at any time, so step 3 is not optional: a photo relicensed to
+NC/ND or all-rights-reserved since the snapshot is dropped, not used.
+Rate limits for step 3: about 1 request per second and well under 10,000 a
+day, with a User-Agent that names you. Tests: `python3 -m unittest`.
 
 ## Attribution
 
